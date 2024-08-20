@@ -23,7 +23,7 @@ const Login = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://project-2-signup-login-with-auth-backend.onrender.com/api/user/login",
+        "https://project-nexuss.onrender.com/api/user/login",
         formData
       );
 
