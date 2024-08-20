@@ -25,9 +25,9 @@ export const Userregister = async (req, res) => {
       expiresIn: "5m",
     });
 
-    const msg = `Please verify your account using OTP: ${otp}`;
+    const msg = `Please verify your account using OTP and don't share anyone: ${otp}`;
 
-    await sendMail(email, "welcome to spark", msg);
+    await sendMail(email, "welcome to Thalapakatti-Restaurant", msg);
     return res.status(200).json({
       message: "Otp sent successfully!!",
       activationToken,
